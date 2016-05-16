@@ -1,0 +1,23 @@
+div.full-main-box
+  div.apply-header
+    div.pull-right
+      a.btn.btn-default(ng-click="flash_list()")
+        span.glyphicon.glyphicon-refresh
+        |&nbsp;刷新
+    h2.title {{title}}
+    div.jurisdict-block
+      div.item-left(style="width:30%;margin:10px 10px 0 0;")
+        div.panel.panel-default
+          div.panel-heading(style="padding:5px 10px;font-size:14px;") 管理机构
+          div.panel-body
+            div(
+              ivh-treeview="treeList"
+              ivh-treeview-use-checkboxes="false"
+              ivh-treeview-id-attribute="'id'"
+              ivh-treeview-label-attribute="'name'"
+              ivh-treeview-children-attribute="'children'"
+              ivh-treeview-twistie-expanded-tpl="'<span class=\"glyphicon glyphicon-chevron-right\"></span>'"
+              ivh-treeview-twistie-collapsed-tpl="'<span class=\"glyphicon glyphicon-chevron-down\"></span>'"
+              ivh-treeview-twistie-leaf-tpl="'&#9679;'"
+            )
+      div.item-left

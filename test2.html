@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>页面布局</title>
+  <meta http-equiv="charset" content="utf-8">
+  <style type="text/css">
+    html{
+      height: 100%;
+    }
+    body{
+      height: 100%;
+      padding:0;
+      margin:0;
+    }
+    *{
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    .clear{
+      clear: both;
+    }
+    .wraper{
+      position: relative;
+      height: 100%;
+    }
+    .header{
+      width: 100%;
+      height: 30px;
+      background-color: red;
+    }
+    .footer{
+      width: 100%;
+      height: 50px;
+      background-color: red;
+    }
+    .content{
+      /*border: 1px solid green;*/
+      height: 100%;
+      padding-bottom: 90px;
+      padding-top: 30px;
+      margin-top: -30px;
+    }
+    .left{
+      float: left;
+      width: 200px;
+      background: green;
+    }
+    .right{
+      margin-left: 220px;
+      background: green;
+    }
+    .container{
+      position: relative;
+      min-height: 100%;
+      border: 1px solid black;
+      margin: 20px;
+    }
+    .container:before{
+      content:' ';
+      border:0;
+      border-left:2px solid #000; 
+      border-right:2px solid #000; 
+      position: absolute;
+      bottom:0;
+      top: 0;
+      left:200px;
+      width:16px;
+      padding:0;
+      margin-top:-1px;
+      margin-bottom: -1px;
+      background: #fff;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wraper">
+    <div class="header">
+      
+    </div>
+    <div class="content">
+      <div class="container">
+        <div class="left">
+        <p>left</p><br>
+        <p>left</p><br>
+        <p>left</p><br>
+        <p>left</p><br>
+        <p>left</p><br>
+        <p>left</p><br>
+        <p>left</p><br>
+        <p>left</p><br>
+      </div>
+      <div class="right">
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+        <p>right</p><br>
+      </div>
+      <div class="clear"></div>
+      </div>
+      
+      <div class="footer">
+      
+      </div>
+    </div>
+    
+  </div>
+    
+
+</body>
+</html>

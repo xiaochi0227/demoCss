@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>页面布局</title>
+  <meta http-equiv="charset" content="utf-8">
+  <style type="text/css">
+    html{
+      height: 100%;
+    }
+    body{
+      height: 100%;
+      padding:0;
+      margin:0;
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .wraper{
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .footer{
+      background: red;
+      position: relative;
+      height: 30px;
+      margin-top:-30px;
+    }
+    .header{
+      height: 30px;
+      background: red;
+      position: relative;
+      z-index: 1;
+    }
+    .content{
+      height: 100%;
+      position: relative;
+      margin-top: -30px;
+      padding-top:30px;
+
+    }
+    p{
+      margin:0;
+      padding:0;
+    }
+
+    .content-container:before{
+      content:' ';
+      border:0;
+      border-left:2px solid #000; 
+      border-right:2px solid #000; 
+      position: absolute;
+      bottom:28px;
+      top: 0;
+      left:200px;
+      width:15px;
+      padding:0;
+      margin-top:-2px;
+      background: #fff;
+      z-index: 1;
+    }
+    .clear{
+      clear: both;
+    }
+
+  </style>
+</head>
+<body>
+  
+  
+  <div class="wraper">
+    <div class="header">
+              
+    </div>
+    <div class="content">
+      <div class="content-container" style="min-height: 100%;padding-bottom: 30px;position: relative;border:2px solid #000;margin:0 30px;">
+        
+        <div style="float: left;width: 200px;">
+          
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+          <p> 11111111111111111 </p><br>
+        </div>
+        <div style="float: left;margin-left: 215px;">
+          <p> 11111111111111111 </p>
+          <p> 11111111111111111 </p>
+          <p> 11111111111111111 </p>
+          <p> 11111111111111111 </p>
+          <p> 11111111111111111 </p>
+          <p> 11111111111111111 </p>
+          <p> 11111111111111111 </p>
+
+        </div>
+        <div class="clear"></div>
+        
+        
+        <hr style="border:0;border-top:2px solid #000; position: absolute;bottom:28px;left:0;width:100%;padding:0;margin:0;background: #fff;">
+      </div>
+      <div class="footer">
+      
+      </div>
+    </div>
+
+    
+    
+  </div>
+    
+
+</body>
+</html>
