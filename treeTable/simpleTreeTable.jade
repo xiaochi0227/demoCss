@@ -1,0 +1,21 @@
+table.zwy-org-table.table.table-hover
+  thead
+    tr
+      th(ng-repeat="tlt in modelData",title="{{tlt.titleStyle}}",ng-style="{{tlt.titleStyle}}") {{tlt.title}}
+  tbody
+    tr(ng-if="treeData == null ")
+      td.loading(colspan="3")
+        zwy-spin(spin-show="true")
+    tr(ng-if="treeData != null && treeData.length<=0")
+      td.loading(colspan="3") 暂无数据
+    tr.simple-tree-table(ng-repeat="item in treeData",data-id="{{item[checkByField]}}",ng-show="!item.isShow")
+      td.simple-tree-table-td(style="text-align:left;",ng-repeat="col in modelData",ng-if="!col.isOper")
+        div(ng-if="$index==0",class="{{col.class}}",style="padding-left:{{item[checkLevel]*2}}em;")
+          span.glyphicon.glyphicon-minus(ng-show="!item.icon && hasChild(item[checkHasChild])")
+          span.glyphicon.glyphicon-plus(ng-show="item.icon && hasChild(item[checkHasChild])")
+          span {{item[col.columnName]}}
+        span(ng-if="$index!=0") {{item[col.columnName]}}
+      td.simple-tree-table-oper(style="text-align:left;")
+        p
+          a(ng-repeat="oper in operData",data-id="{{item.id}}") {{oper.name}}
+            span.divide(ng-if="$index!=operData.length-1")

@@ -1,0 +1,21 @@
+div.full-main-box
+	div.apply-header
+		div.pull-right
+			a.btn.btn-default(ng-click="flash_list()")
+				span.glyphicon.glyphicon-refresh
+				|&nbsp;刷新
+			button.btn.btn-primary(ng-click="doAdd()") 添加行政区划
+		h2.title {{title}}
+
+	
+	zy-simple-tree-table(
+		tree-data="list"
+		model-data="modelData"
+		oper-data="operData"
+		check-level="level"
+		check-has-child= "path"
+		check-by-field="path"
+	)
+		
+			
+
